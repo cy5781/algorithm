@@ -14,6 +14,7 @@ public class SelectionSort {
             for(int j = i+1 ; j< n ;j++){
                 if(arr[j].compareTo(arr[minIndex]) < 0){
                     minIndex = j;
+                    //swap(arr,j,minIndex);
                 }
             }
             swap(arr,i,minIndex);
@@ -29,7 +30,7 @@ public class SelectionSort {
     public static void main(String[] args) {
 
         // 测试排序算法辅助函数
-        int N = 10;
+        int N = 10000;
         Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);
         SelectionSort.sort( arr );
         SortTestHelper.printArray(arr);
