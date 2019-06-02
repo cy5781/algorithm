@@ -28,6 +28,7 @@ public class BubbleSort {
         int N = 10000;
         Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);
         SortTestHelper.testSort("org.algorithm.BubbleSort", arr);
+        BubbleSort.sort(arr);
         SortTestHelper.printArray(arr);
         return;
     }
